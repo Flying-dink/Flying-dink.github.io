@@ -12,4 +12,4 @@ A website that offers fitness tracking services.
 https://lernantino.github.io/run-buddy/
 
 ## Contribution
-Made with   by Catherine Clifford
+Made with ❤️ by Catherine Clifford
