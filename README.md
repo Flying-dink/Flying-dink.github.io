@@ -9,7 +9,7 @@ A website that offers fitness tracking services.
 * *CSS
 
 ## Website
-https://portfolio.github.io/run-buddy
+https://portfolio.github.io/index.html
 
 ## Contribution
 Made with ❤️ by Catherine Clifford
