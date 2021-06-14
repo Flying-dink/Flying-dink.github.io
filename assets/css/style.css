@@ -1,15 +1,16 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body { 
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 /* apply styles to <header>*/
 header {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-  background-color: #39a6b2;
+  padding: 20px 35px; 
+  background-color:   #39a6b2;
 }
 body {
   color: #39a6b2;
@@ -20,6 +21,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  display: inline
 }
 header a {
   text-decoration: none;
@@ -72,7 +74,7 @@ section {
   background-position: center;
   position: relative
 }
-/* Hero Style End*/
+/*Hero Style End*/
 .hero-form {
   border: 3px solid #024e76;
   background-color:#fce138 ;
@@ -80,6 +82,7 @@ section {
   width: 500px;
   color: #024e76;
   position: absolute;
+  bottom: 120px;
   right: 140px;
 }
 .hero-form h3 {
@@ -87,7 +90,7 @@ section {
   margin: 0;
 }
 .hero-form p {
-  margin: 5px 0 25px 0;
+  margin: 5px 0 15px 0;
 }
 .form-input {
   border: 1px solid #024e76;
@@ -108,6 +111,7 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+
 .intro {
   text-align: center;
 }
@@ -147,7 +151,7 @@ section {
   color: #024e76;
   margin-bottom: 35px;
   padding: 0 100px 20px 100px;
-  display: inlin-block;
+  display: inline-block;
   border-bottom: 3px solid;
 }
 .primary-border {
@@ -201,6 +205,9 @@ section {
   text-align: center;
   background: #024e76;
 }
+.contact h2 {
+  color: #fce138;
+}
 .section-title {
   font-size: 55px;
   display: inline-block;
@@ -215,6 +222,10 @@ section {
   text-align: left;
   margin: 30px 0 0 60px;
   color: white;
+}
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
 }
 .contact-info p, .contact-info address {
   margin: 20px 0;
