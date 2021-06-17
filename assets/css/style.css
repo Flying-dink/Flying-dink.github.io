@@ -11,6 +11,13 @@ body {
 header {
   padding: 20px 35px; 
   background-color:   #39a6b2;
+  position: sticky;
+  top: 0;
+  background-image: url( "../../hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 body {
   color: #39a6b2;
@@ -21,7 +28,8 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  display: inline
+  display: inline;
+  text-shadow: 00 0 10px rgba (0,0,0,0.5);
 }
 header a {
   text-decoration: none;
@@ -36,10 +44,11 @@ header nav {
 header nav ul li {
   display: inline;
 }
-header nav ul li a {
+header nav ul li a:hover {
   padding: 10px 15px ;
   font-weight: lighter;
   font-size: 22px;
+  text-shadow: 0 0 10px rga(0,0,0,0.5);
 }
 
 footer {
@@ -69,16 +78,21 @@ section {
 /* Hero Style Start*/
 .hero {
   background-image: url( "../../hero-bg.jpg");
-  height: 600px;
   background-size: cover;
   background-position: center;
+  height: 600px;
   position: relative;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 
 }
 
 .hero-cta {
   line-height: 1.2;
+}
+.hero-cta h2 {
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /*Hero Style End*/
@@ -91,6 +105,8 @@ section {
   position: absolute;
   bottom: 120px;
   right: 140px;
+  box-shadow: 0,0,0,0.5;
+  border-radius: 15px;
 }
 .hero-form h3 {
   font-size: 24px;
@@ -107,16 +123,22 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
+.form-input:focus {
+  background-color: rgba(255,255,255,1);
 }
 .hero-form label {
   margin: 0 5px;
 }
-.hero-form button {
+.hero-form button:hover {
   color: #fce138;
   background-color: #024e76;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .intro {
@@ -129,28 +151,29 @@ section {
   font: 20px;
   margin: 0 auto;
 }
-.steps {
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
   text-align: center;
   background: #fce138;
 
 }
-.steps div {
+.step div {
   margin-bottom: 80px;
 }
-.steps img {
+.step img {
   width: 15%;
   margin: 10px 0;
 }
-.steps h3 {
+.step h3 {
   color:  #024e76;
   font-size: 46px;
   margin-top: 10px;
 }
-.steps p {
+.step p {
   color: #39a6b2;
   font-size: 23px;
 }
-.steps span {
+.step span {
   font-size: 38px;
 }
 .section-title {
@@ -240,6 +263,12 @@ section {
   font-size: 20px;
   font-style: normal;
 }
+.contact-form input:focus, .contact-form textarea:focus {
+  border-radius: 10px;
+}
+.contact-form button:hover {
+  border-radius: 10px;
+}
 .contact-info a {
   color: #fce138;
 }
@@ -251,6 +280,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
   header h1 {
     width: 100%;
@@ -261,7 +291,7 @@ section {
     width: 100%;
     justify-content: center;
   }
-  header nav ul li a {
+  header nav ul li  {
     font-size: 20px;
   }
   footer h2, footer div {
@@ -292,12 +322,18 @@ section {
   }
 .step h3 {
   flex: 1 100%;
+ text-align: center
 }
-
 .step-info {
   flex: 2 100%;
   text-align: center;
   justify-content: center;
+}
+.step-img {
+  flex: 0 32%;
+  margin-right: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .step-text {
   flex: 100%;
@@ -314,7 +350,11 @@ section {
   .section-title {
     width: 100%;
   }
-{.trainer {
+  .intro p {
+    width: 100%;
+  }
+
+.trainer {
   flex: 0 100%;
 }
 .contact-info {
