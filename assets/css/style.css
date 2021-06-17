@@ -37,7 +37,7 @@ header nav ul li {
   display: inline;
 }
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px ;
   font-weight: lighter;
   font-size: 22px;
 }
@@ -72,8 +72,15 @@ section {
   height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative
+  position: relative;
+  align-items: flex-start;
+
 }
+
+.hero-cta {
+  line-height: 1.2;
+}
+
 /*Hero Style End*/
 .hero-form {
   border: 3px solid #024e76;
@@ -147,7 +154,7 @@ section {
   font-size: 38px;
 }
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   margin-bottom: 35px;
   padding: 0 100px 20px 100px;
@@ -237,3 +244,90 @@ section {
   color: #fce138;
 }
 /* Reach out styles end*/
+
+
+/*MEDIA QUERIES FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width:980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-cta, .hero-form {
+    width: 100%;
+  } 
+  .hero-cta {
+    text-emphasis: center;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .trainer {
+    flex: 1 100%;
+  }
+  
+/* this will be applied on any screen smaller than 980px */
+
+  }
+}
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 768px) {
+  section { 
+    padding: 30px 15px;
+  }
+.step h3 {
+  flex: 1 100%;
+}
+
+.step-info {
+  flex: 2 100%;
+  text-align: center;
+  justify-content: center;
+}
+.step-text {
+  flex: 100%;
+}
+    /* this will be applies on any screen between 768 px and 575px */
+    
+  }
+}
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 100%;
+  }
+{.trainer {
+  flex: 0 100%;
+}
+.contact-info {
+  text-align: center;
+}
+.contact-info > * {
+  flex: 0 100%;
+}
+.contact-form {
+  order: 3;
+}
+    /*this will be applied on any screen smaller than 575px */
+    
+  }
+}
+
