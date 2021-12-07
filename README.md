@@ -55,7 +55,7 @@ MIT
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
 
 
 
