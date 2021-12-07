@@ -5,6 +5,7 @@ https://github.com/Flying-dink/Run-buddy.github.io
 A website that offers fitness tracking services.
 
 
+![2021-06-23 (5)](https://user-images.githubusercontent.com/83742550/144962945-24673481-1fdb-4732-abf2-07a9fe2d7901.png)
 
 
 ## Built With 
