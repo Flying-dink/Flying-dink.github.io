@@ -1,8 +1,11 @@
-# portfolio.github.io
-Run Buddy, Inc
+# Runbuddy
+https://github.com/Flying-dink/Run-buddy.github.io
 
 ## Description
 A website that offers fitness tracking services.
+
+
+
 
 ## Built With 
 * HTML
